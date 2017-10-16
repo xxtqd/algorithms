@@ -14,6 +14,7 @@ public class KMP {
         while (!exit){
             System.out.println("Enter a original string:");
             String original = keyboard.nextLine();
+            System.out.println("String length: " + (original==null?0:original.length()));
             System.out.println("Enter a pattern string:");
             String pattern = keyboard.nextLine();
             int[] kmpTable = buildKMPTable(pattern);
@@ -36,7 +37,13 @@ public class KMP {
         }
     }
 
-
+    /**
+     * This method checks if a pattern string exists in a string and return the o-based position of the pattern string
+     * if it does or return -1 if it doesn't
+     * @param original the original string that we search on
+     * @param pattern the pattern string that we search for in the original string
+     * @return
+     */
     private static int kmp(String original, String pattern){
         int[] table = buildKMPTable(pattern);
         if(table != null){
@@ -57,6 +64,12 @@ public class KMP {
         return -1;
     }
 
+    /**
+     * Given a string this method build an array of integer that represents the length of max prefix and proper suffix
+     * if t[i] = 3 that means the 3 letters before position i matches the first 3 letters at the beginning of the string
+     * @param str
+     * @return
+     */
     private static int[] buildKMPTable(String str){
         if(str == null){
             return null;
