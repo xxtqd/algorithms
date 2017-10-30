@@ -1,4 +1,4 @@
-package twosum;
+package pointers.twosum;
 
 import org.junit.Test;
 

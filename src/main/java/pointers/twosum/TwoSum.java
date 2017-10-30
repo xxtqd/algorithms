@@ -1,6 +1,5 @@
-package twosum;
+package pointers.twosum;
 
-import java.util.Arrays;
 import java.util.HashMap;
 
 /**
