@@ -45,7 +45,7 @@ public class Q1_5 {
             }
         }
         //return sIndex1 == sLen1 && sIndex2 == sLen2;// mistake: abc abcd
-        return sIndex1 == sLen1 && sIndex2 == sLen2 || step == 0;
+        return true;
     }
 
     public static void main(String[] args) {
