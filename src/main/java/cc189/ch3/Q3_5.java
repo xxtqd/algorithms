@@ -19,4 +19,17 @@ public class Q3_5 {
             stack.push(buffer.pop());
         }
     }
+
+    public static void main(String[] args) {
+        Q3_5 q = new Q3_5();
+        int[] test = new int[]{3,7,2,5,1,7,9,0};
+        Stack<Integer> stack = new Stack<>();
+        for (int num : test) {
+            stack.push(num);
+        }
+        q.sortStack(stack);
+        while (!stack.isEmpty()) {
+            System.out.println(stack.pop());
+        }
+    }
 }
