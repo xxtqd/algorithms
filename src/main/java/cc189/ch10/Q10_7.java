@@ -45,7 +45,7 @@ public class Q10_7 {
             counters[num / rangeSize]++;
         }
         in.close();
-        // find the range that has less count than then range count
+        // find the range that has less count than the range count
         int index = -1;
         for (int i = 0; i < arraySize; i++) {
             if (counters[i] < rangeSize) {
