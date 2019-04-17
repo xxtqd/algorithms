@@ -3,9 +3,6 @@ package common;
 /**
  * Created by xu_xt on 7/1/18.
  */
-
-import apple.laf.JRSUIUtils;
-
 import java.util.ArrayList;
 
 /**
